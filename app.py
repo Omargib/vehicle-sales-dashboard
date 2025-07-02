@@ -40,7 +40,7 @@ if show_hist:
     st.plotly_chart(fig)
 
 if show_scatter:
-    fig = px.scatter(df, x='odometer', y='price', color='tytpe',
+    fig = px.scatter(df, x='odometer', y='price', color='type',
                      title='Price vs Odometer by Vehicle Type',
                      hover_data=['model', 'model_year'])
     st.plotly_chart(fig)
